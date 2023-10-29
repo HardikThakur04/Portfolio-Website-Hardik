@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pertfolio</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    background: #009FFF;  
+    background: -webkit-linear-gradient(to right, #ec2F4B, #009FFF);  
+background: linear-gradient(to right, #ec2F4B, #009FFF);
+
+}
+
+nav{
+    width: 100%;
+    height: 70px;
+    background-color: rgb(58, 74, 83);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 70px;
+    position: fixed;
+    box-shadow: 0 0 9px;
+
+}
+
+#logo{
+    font-size: 2em;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: #e5e9eb;
+}
+
+
+#menu a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.2em;
+    padding: 0.5rem 1rem;
+
+
+}
+
+#menu a:nth-child(5){
+    background: #17d420;
+    border-radius: 8px;
+    margin: 0 1rem;
+
+}
+
+.menu i{
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+    cursor: pointer;
+
+}
+
+#menu a:hover{
+    background: #17d420;
+    border-radius: 8px;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 70px;
+
+}
+
+.left{
+    flex-basis: 60%;
+    margin-right: 500px;
+    margin-top: 200px;
+
+}
+
+.right{
+    flex-basis: 30%;
+    padding-left: 39%;
+    margin-top: -400px;
+    margin-right: -250px;
+
+    
+}
+
+
+h1{
+    color: rgb(20, 20, 9);
+    font-size: 2.5em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #f7fbfd;
+    
+
+}
+
+.left p{
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.4rem;
+    font-size: 16.5px;
+
+}
+
+#hire{
+    text-decoration: none;
+    background: #6ab04c;
+    color: aliceblue;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    margin: 0 1rem;
+    margin-left: 2px;
+}
+
+#profile{
+    text-decoration: none;
+    color: #cdd6db;
+    font-size: 1.5rem;
+    border-radius: 8px;
+    border: 1px dashed white;
+    padding: .9rem 2rem;
+    margin: 0 1 rem;
+}
+
+#profile:hover{
+    background-color: #152f3f;
+}
+
+#bio{
+    cursor: pointer;
+    padding: 150px 70px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+
+}
+
+.leftbio{
+    flex-basis: 40%;
+
+}
+
+.rightbio{
+    flex-basis: 60%;
+    padding-left: 200%;
+    
+}
+
+.leftbio img{
+    width: 100%;
+    height: 700px;
+    border-radius: 8px;
+
+}
+
+.rightbio{
+    text-align: right;
+    padding: 0 3px;
+
+}
+.rightbio p{
+    margin: 15px 0;
+    line-height: 2rem;
+    font-size: 18px;
+}
+
+.rightbio h1{
+    font-size: 2.6rem;
+    text-align: right;
+}
+
+.info{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    text-align: left;
+    
+}
+
+#follow{
+    text-align: center;
+
+}
+
+#follow i{
+    color:#6ab04c;
+    font-size: 1.5rem;
+    margin:0 o.5rem;
+}
+
+.link-h{
+    text-align: center;
+    margin-top: 3rem;
+}
+
+#cv{
+    text-decoration: none;
+    color:#152f3f;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    margin: 0 1rem;
+    border: 1px dashed grey;
+
+}
+
+#services{
+
+    padding: 50px 70px;
+    width: 100%;
+    height: 100%;
+    background: rgb(235, 231, 231);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.intro h1{
+    font-size: 1.9rem;
+
+}
+
+.card{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+}
+
+.cardbody{
+    flex-basis: 30%;
+    background: #c9cfd3;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.cardbody h3{
+    font-size: 1.9rem;
+    margin: 0.5rem 0;
+}
+
+.cardbody i{
+    font-size: 2.3rem;
+    color: rgb(15, 158, 58);
+}
+
+footer {
+    width: 100%;
+    height: 70px;
+    background-color: rgb(159, 170, 176);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 70px;
+    
+
+}
+
+.btext a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.3em;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    margin-left: 60px;
+    margin-right: 30px;
+}
+
+</style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="logo">
+                <img src="/img/sign.png" height="69px" width="180">
+            </div>
+            <div id="menu">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Pertfolio</a>
+                <a href="#">Services</a>
+                <a href="#">Hire Me</a>
+
+                <i class="ri-search-line"></i>
+                <i class="ri-moon-fill"></i>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="left">
+                <h1>Hi, I'm Hardik Thakur</h1>
+                <h2>Frontend Web Developer</h2>
+                <p>             
+                    a frontend Web Developer passionate <br>about creating user-friendly,visually appealing websites. Beyond frontend, <br>I'm a MySQL database enthusiast,ensuring your websites look great and run smoothly.
+                </p>
+                <br><br>
+                <div>
+                    <a href="#" id="hire">Hire Me</a>
+                    <a href="#" id="profile">My Profile</a>
+                </div>
+            </div>
+            <div class="right">
+                <img src="/img/logo.png" height="700" width="700">
+            </div>
+
+        </div>
+    </header>
+
+    <section id="bio">
+        <div class="leftbio">
+            <img src="/img/logo33.png">
+        </div>
+         <div class="rightbio">
+            
+                <P>My Biography</P>
+                <h1>A Passionate Web Developer, Database Enthusiast, and UI Designer</h1>
+                <p>I'm a passionate with a unique blend of skills. As a web developer, I craft dynamic and engaging online experiences. I'm also a database enthusiast, optimizing data structures and queries for seamless performance. Plus, my UI design skills ensures that your projects not only function flawlessly but also look stunning.</p>
+                <hr>
+         <div class="info">
+            <div>
+                <P><b>Name: </b>Hardik Thakur</P>
+                <P><b>Email: </b>hardikthakur8953@gmail.com</P>
+            </div>
+            <div>
+                <P><b>From: </b>Jharkhand</P>
+                <P><b>Phone: </b>7488803904</P>
+            </div>
+        </div>
+        
+        <div id="follow">
+            <p><b>Follow Me On</b>
+            
+            <i class="ri-facebook-circle-fill"></i>
+            <i class="ri-whatsapp-line"></i>
+            <i class="ri-youtube-fill"></i>
+            <i class="ri-instagram-line"></i>
+            
+        </p>
+        
+        <div class="link-h">
+            <a href="#" id="hire">Hire Me</a>
+            <a href="#" id="cv">Download CV</a>
+        </div>
+
+    </section>
+    <section id="services">
+        <div class="intro">
+            <h1>Skills that work for you!</h1>
+            <div class="card">
+                <div class="cardbody">
+                    <i class="ri-global-line"></i>
+                    <h3>Web Development</h3>
+                    <p>Web designer creating visually appealing, user-friendly websites with HTML, CSS, and responsive design.</p>
+                </div>
+
+                <div class="cardbody">
+                    <i class="ri-macbook-line"></i>
+                    <h3>UI Designer</h3>
+                    <p>Dedicated UI Designer crafting seamless, captivating digital experiences for you.</p>
+                </div>
+
+                <div class="cardbody">
+                     <i class="ri-database-2-line"></i>
+                    <h3>Database</h3>
+                    <p>MySql Database design, optimization, and maintenance, ensuring data efficiency and integrity for your projects.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="btext">
+            <a href="#">About Us</a>
+            <a href="#">Projects</a>
+            <a href="#">Skills</a>
+            <a href="#">Pertfolio</a>
+            <a href="#">Services</a>
+            <a href="#">Skills</a>
+            <a href="#">Contact Us</a>
+        </div>
+        </div>
+
+    </footer>
+    
+</body>
+</html>
