@@ -1,0 +1,161 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #333;
+    padding: 25px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #5381ec;
+}
+
+/* About Section */
+#about {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(90deg, rgb(143, 138, 252) 38%, rgb(227, 129, 235) 75%);
+    color: white;
+}
+
+.profile-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-photo {
+    width: 400px;
+    height: 400px;
+    
+}
+
+.about-content .btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: rgb(255, 255, 255);
+    color: #1db445;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.about-content .btn:hover {
+    background-color: #d5e1ea;
+}
+
+/* Skills Section */
+#skills {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.skill {
+    background-color:#ffffff;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+/* Projects Section */
+#projects {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.project-box {
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.project-box img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Awards Section */
+#awards {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+}
+
+.awards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.award-box {
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: white;
+}
+
+.award-box img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Contact Section */
+#contact {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
